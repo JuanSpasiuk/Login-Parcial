@@ -1,0 +1,108 @@
+:root {
+  --text: #e9f0f6;
+  --background: #080f17;
+  --primary: #96bce0;
+  --secondary: #215485;
+  --accent: #2c82d5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 20px;
+}
+
+.login-card {
+  background: rgba(33, 84, 133, 0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--secondary);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(44, 130, 213, 0.2);
+}
+
+.login-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-shadow: 0 0 6px var(--accent), 0 0 12px rgba(44, 130, 213, 0.6);
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+.login-title:hover {
+  text-shadow: 0 0 12px var(--primary), 0 0 24px var(--accent);
+  transform: scale(1.03);
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  display: block;
+  margin-bottom: 6px;
+  color: var(--primary);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-color: #0d1824;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.input-group input:focus {
+  border: 1px solid var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
+.btn-login {
+  width: 100%;
+  background-color: var(--accent);
+  color: var(--text);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background-color: var(--primary);
+  transform: scale(1.02);
+}
+
+.forgot-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.forgot-link:hover {
+  color: var(--accent);
+}

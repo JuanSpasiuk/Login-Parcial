@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio | InnovaTech</title>
+   
+</head>
+<body>
+  <div class="home-container">
+    <h1 class="home-title">👋 ¡Bienvenido a InnovaTech!</h1>
+    <p class="home-text">Has iniciado sesión correctamente.</p>
+
+    <div class="home-buttons">
+      <a href="/admin" class="btn">Ir a zona Admin</a>
+      <button id="logout" class="btn logout">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('logout').addEventListener('click', async () => {
+      await fetch('/api/auth/logout', { method: 'POST' });
+      location.href = '/login';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "name": "login-pg-fixed-prueba",
+  "version": "1.0.0",
+  "description": "Proyecto de login con Express, MySQL y JWT",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon src/app.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.3.1",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
